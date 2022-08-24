@@ -1,11 +1,9 @@
-import React from "react";
-
 interface BannerProps {
-  title: string;
+  children: string;
   bgColor?: string;
 }
 
-export const Banner = ({ title, bgColor }: BannerProps) => {
+export const Banner = ({ children, bgColor }: BannerProps) => {
   return (
     <section
       className="bg-slate-600 snap-start h-screen w-screen flex items-center justify-center text-8xl"
@@ -13,7 +11,7 @@ export const Banner = ({ title, bgColor }: BannerProps) => {
         backgroundColor: bgColor,
       }}
     >
-      {title}
+      {children}
     </section>
   );
 };
