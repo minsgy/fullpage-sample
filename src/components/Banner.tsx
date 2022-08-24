@@ -7,13 +7,13 @@ interface BannerProps {
 
 export const Banner = ({ title, bgColor }: BannerProps) => {
   return (
-    <div
+    <section
       className="bg-slate-600 snap-start h-screen w-screen flex items-center justify-center text-8xl"
       style={{
         backgroundColor: bgColor,
       }}
     >
       {title}
-    </div>
+    </section>
   );
 };
