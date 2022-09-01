@@ -1,13 +1,14 @@
-import { Banner } from "../layouts/Banner";
+import { Item1 } from "../components/Item1";
+import { Item2 } from "../components/Item2";
 import { BannerRapping } from "../layouts/BannerRapping";
 
 export const LandingPage = () => {
   return (
     <BannerRapping>
-      <Banner>1</Banner>
-      <Banner>2</Banner>
-      <Banner>3</Banner>
-      <Banner>4</Banner>
+      <Item1 />
+      <Item2 />
+      <Item1 />
+      <Item2 />
     </BannerRapping>
   );
 };
